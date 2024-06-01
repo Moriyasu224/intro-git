@@ -22,5 +22,16 @@ git addした後の変更差分の確認
 ローカル環境にファイルを残したい時
     git rm --cached <ファイル名>
 
-.gitignoreファイルに読み込ませたくないファイルを記入する。
-例えばパスワードなどを管理しているファイル。
+#.gitignoreファイルに読み込ませたくないファイルを記入する。
+例）パスワードなどを管理しているファイルなど。
+
+#コマンドにエイリアスをつける方法
+    git config --global alias.ci commit
+    git config --global alias.st status
+    git config --global alias.br branch
+    git config --global alias.co checkout
+    などコマンドを省略するためのコマンドを設定できる。
+    --globalのオプションをつけることでPC全体のコマンドを変更できる。
+    今いるディレクトリ内でのみ省略コマンドを使いたい時は、--globalオプションはつけなくていい。
+
+
